@@ -27,7 +27,7 @@ async def download_file(url, dest):
             data = await response.read()
             with open(dest, 'wb') as f:
                 f.write(data)
-∏
+
 
 async def setup_learner():
     await download_file(export_file_url, path / export_file_name)
